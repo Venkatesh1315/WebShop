@@ -1,0 +1,7 @@
+{
+   "firstNameValidMessage":"First name is required.",
+   "lastNameValidMessage":"Last name is required.",
+   "emailValidMessage":"Email is required.",
+   "passwordValidMessage":"Password is required.",
+   "confrimPasswordValidMessage":"Password is required."
+}

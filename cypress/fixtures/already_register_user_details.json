@@ -1,0 +1,9 @@
+{
+   "firstName":"Sai",
+   "lastName":"Kiran",
+   "email":"sai.kiran@atmecs.com",
+   "passwod":"Saikiran@123",
+   "confrimPassword":"Saikiran@123",
+   "successMessage":"Your registration completed",
+   "registeredUserValidationMessage":"The specified email already exists"
+}

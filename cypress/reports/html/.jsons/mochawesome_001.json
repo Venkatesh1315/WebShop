@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-30T12:48:15.354Z",
+    "end": "2024-10-30T12:48:30.644Z",
+    "duration": 15290,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "a274c40a-413c-4181-93d3-d5828dfea023",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\Tests\\register-user-in-webshop.spec.ts",
+      "file": "cypress\\integration\\examples\\Tests\\register-user-in-webshop.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34136db6-42f0-4a3f-b5bb-000fb76c75a3",
+          "title": "User registration in Web Shop Application",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register user with valid data and verify success",
+              "fullTitle": "User registration in Web Shop Application Register user with valid data and verify success",
+              "timedOut": null,
+              "duration": 527,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Register Page\ncy.allure().feature('User Register Feature');\ncy.allure().story('User registered with valid data');\nregisterpage.openURL();\nregisterpage.clickOnRegisterLink();\nregisterpage.selectGender();\nregisterpage.enterFirstName(register_user_details_json_1.default.firstName);\nregisterpage.enterLastName(register_user_details_json_1.default.lastName);\nregisterpage.enterEmail(register_user_details_json_1.default.email);\nregisterpage.enterPassword(register_user_details_json_1.default.passwod);\nregisterpage.enterConfrimPassword(register_user_details_json_1.default.confrimPassword);\nregisterpage.clickOnRegisterButton();\nregisterpage.verifySuccessMessage(register_user_details_json_1.default.successMessage);\n//cy.allure().end();",
+              "err": {
+                "message": "CypressError: `cy.task('ctrLogMessages')` failed with the following error:\n\nThe task 'ctrLogMessages' was not handled in the setupNodeEvents method. The following tasks are registered: reportAllureCypressSpecMessages, reportFinalAllureCypressSpecMessages\n\nFix this in your setupNodeEvents method here:\nC:\\Users\\venkatesh.patsamatla\\WebShop\\cypress.config.ts\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: `cy.task('ctrLogMessages')` failed with the following error:\n\nThe task 'ctrLogMessages' was not handled in the setupNodeEvents method. The following tasks are registered: reportAllureCypressSpecMessages, reportFinalAllureCypressSpecMessages\n\nFix this in your setupNodeEvents method here:\nC:\\Users\\venkatesh.patsamatla\\WebShop\\cypress.config.ts\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at <unknown> (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:134958:72)\n    at tryCatcher (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://webshop/./node_modules/cypress-terminal-report/src/collector/LogCollectControlSimple.js:37:0)",
+                "diff": null
+              },
+              "uuid": "b02408ba-a1b6-44b8-8aec-f9935bc80b48",
+              "parentUUID": "34136db6-42f0-4a3f-b5bb-000fb76c75a3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify validation messages are displaying for all fileds without enter data click on register button",
+              "fullTitle": "User registration in Web Shop Application Verify validation messages are displaying for all fileds without enter data click on register button",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Register Page\nregisterpage.openURL();\nregisterpage.clickOnRegisterLink();\nregisterpage.clickOnRegisterButton();\nregisterpage.verifyFirstNameValidMessage(validation_messages_in_userdetails_json_1.default.firstNameValidMessage);\nregisterpage.verifyLastNameValidMessage(validation_messages_in_userdetails_json_1.default.lastNameValidMessage);\nregisterpage.verifyEmailValidMessage(validation_messages_in_userdetails_json_1.default.emailValidMessage);\nregisterpage.verifyPasswordValidMessage(validation_messages_in_userdetails_json_1.default.passwordValidMessage);\nregisterpage.verifyConfrimPasswordValidMessage(validation_messages_in_userdetails_json_1.default.confrimPasswordValidMessage);",
+              "err": {},
+              "uuid": "a757748e-2ad3-4316-9264-7bb9eec81af8",
+              "parentUUID": "34136db6-42f0-4a3f-b5bb-000fb76c75a3",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Verify validation message for already register user",
+              "fullTitle": "User registration in Web Shop Application Verify validation message for already register user",
+              "timedOut": null,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "registerpage.openURL();\nregisterpage.clickOnRegisterLink();\nregisterpage.selectGender();\nregisterpage.enterFirstName(already_register_user_details_json_1.default.firstName);\nregisterpage.enterLastName(already_register_user_details_json_1.default.lastName);\nregisterpage.enterEmail(already_register_user_details_json_1.default.email);\nregisterpage.enterPassword(already_register_user_details_json_1.default.passwod);\nregisterpage.enterConfrimPassword(already_register_user_details_json_1.default.confrimPassword);\nregisterpage.clickOnRegisterButton();\nregisterpage.verifyValidMessageForAlreadyRegisterUser(already_register_user_details_json_1.default.registeredUserValidationMessage);",
+              "err": {
+                "message": "CypressError: `cy.task('ctrLogFiles')` failed with the following error:\n\nThe task 'ctrLogFiles' was not handled in the setupNodeEvents method. The following tasks are registered: reportAllureCypressSpecMessages, reportFinalAllureCypressSpecMessages\n\nFix this in your setupNodeEvents method here:\nC:\\Users\\venkatesh.patsamatla\\WebShop\\cypress.config.ts\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after all` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: `cy.task('ctrLogFiles')` failed with the following error:\n\nThe task 'ctrLogFiles' was not handled in the setupNodeEvents method. The following tasks are registered: reportAllureCypressSpecMessages, reportFinalAllureCypressSpecMessages\n\nFix this in your setupNodeEvents method here:\nC:\\Users\\venkatesh.patsamatla\\WebShop\\cypress.config.ts\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after all` hook we are skipping all of the remaining tests.\n    at <unknown> (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:134958:72)\n    at tryCatcher (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://webshop/./node_modules/cypress-terminal-report/src/collector/LogCollectControlSimple.js:87:0)",
+                "diff": null
+              },
+              "uuid": "1183e2e8-d0af-4719-a214-40fe18eec4e7",
+              "parentUUID": "34136db6-42f0-4a3f-b5bb-000fb76c75a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b02408ba-a1b6-44b8-8aec-f9935bc80b48",
+            "1183e2e8-d0af-4719-a214-40fe18eec4e7"
+          ],
+          "pending": [],
+          "skipped": [
+            "a757748e-2ad3-4316-9264-7bb9eec81af8"
+          ],
+          "duration": 527,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

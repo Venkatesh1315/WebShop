@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-30T12:48:33.155Z",
+    "end": "2024-10-30T12:48:45.918Z",
+    "duration": 12763,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23e045c6-33f8-432d-bc7e-97093ccd1db7",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\Tests\\search-and-purchase-product-in-webshopt.spec.ts",
+      "file": "cypress\\integration\\examples\\Tests\\search-and-purchase-product-in-webshopt.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "31ad4c12-e97f-4825-a248-fed76de1b945",
+          "title": "Purchasing a product using the Webshop application",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Purchase laptop and verify success",
+              "fullTitle": "Purchasing a product using the Webshop application Purchase laptop and verify success",
+              "timedOut": null,
+              "duration": 211,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login();\nhomepage.enterProductNameIntoSearchBox(product_details_json_1.default.produtName);\nhomepage.clickOnSearchButton();\nhomepage.clickOnAddToCartButton();\nhomepage.verifYSuccessMessage();\nhomepage.clickOnShoppingCartLink();\n//Cart Page Test\ncartpage.clickOnCountryDropDown(product_details_json_1.default.conuntry);\ncartpage.clickOnTermsAndAgreeCheckBox();\ncartpage.clickOnCheckOutButton();\ncartpage.clickOnBillingAddresscontinueButtonButton();\ncartpage.clickStorePickUpCheckBox();\ncartpage.clickOnShippingAddressContinueButton();\ncartpage.clickOnPaymentMethodContinueButton();\ncartpage.clickOnPaymentInfoContinueButton();\ncartpage.clickOnConfrimOrderButton();\ncartpage.verifyOrderSuccessMessage(product_details_json_1.default.orderProcessMessage);\nconsole.log(cartpage.gettingOrderID());",
+              "err": {
+                "message": "CypressError: `cy.task('ctrLogFiles')` failed with the following error:\n\nThe task 'ctrLogFiles' was not handled in the setupNodeEvents method. The following tasks are registered: reportAllureCypressSpecMessages, reportFinalAllureCypressSpecMessages\n\nFix this in your setupNodeEvents method here:\nC:\\Users\\venkatesh.patsamatla\\WebShop\\cypress.config.ts\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after all` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: `cy.task('ctrLogFiles')` failed with the following error:\n\nThe task 'ctrLogFiles' was not handled in the setupNodeEvents method. The following tasks are registered: reportAllureCypressSpecMessages, reportFinalAllureCypressSpecMessages\n\nFix this in your setupNodeEvents method here:\nC:\\Users\\venkatesh.patsamatla\\WebShop\\cypress.config.ts\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after all` hook we are skipping all of the remaining tests.\n    at <unknown> (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:134958:72)\n    at tryCatcher (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://demowebshop.tricentis.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://webshop/./cypress/support/utilities.ts:88:0)",
+                "diff": null
+              },
+              "uuid": "4160f3c1-7525-4ab3-9e70-b12abc57ebda",
+              "parentUUID": "31ad4c12-e97f-4825-a248-fed76de1b945",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4160f3c1-7525-4ab3-9e70-b12abc57ebda"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 211,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

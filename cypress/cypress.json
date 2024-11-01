@@ -1,0 +1,7 @@
+{
+  "reporter": "cypress-html-reporter",
+  "reporterOptions": {
+    "html": "HTML Reports/report.html",
+    "json": "HTML Reports/report.json"
+  }
+}
